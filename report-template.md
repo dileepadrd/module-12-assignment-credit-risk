@@ -2,13 +2,13 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+Credit risk classifications, more often than not, intrinsically unbalanced. The reason for this is that the majority of the loans are healthy loans. The purpose of this analysis is to create a model to identify the creditworthiness of borrowers based on the dataset of historical lending activity from the peer-to-peer lending service company provided. 
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+Furthermore, the loan status is the variable that is going to be predicted through this model. In order to achieve this,  historical data of loan_size, interest_rate, borrower_income, debt_to_income, num_of_accounts, derogatory_marks and total_debt are being used. 
+
+During the first stage the data is loaded into Panda Dataframe and separated into X and Y data sets. After that the original data is divided into two main categories: testing data set and training data set. The purpose of the training data set is to train the model while the testing data set is used to check the accuracy of the model. 
+
+The next stage is to initialize and fit the LogisticRegression model for the original dataset. After that the predictions of the original dataset are being made by using the predict function of the LogisticRegression model. During the next phase, the accuracy score, confusion matrix and the classification report for the unbalanced dataset are being generated. The next step is to generate a sample via RandomOverSampler and do the same steps for the sample data. 
 
 ## Results
 
