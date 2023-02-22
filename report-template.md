@@ -34,9 +34,8 @@ In this section, the balanced accuracy scores and the precision and recall score
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+Both prediction models have worked with acceptable accuracy. However, according to the accuracy, precision and recall scores, the resampled data model works better then the other for the data set provided. The only one exception is the precision of the high risk loans of two models: 85 percent for the original dataset and 84 percent for the resampled data set. Nevertheless, since there is no significant difference between 85 and 84 and all other parameters are better in the BalancedResampled data, it could be concluded that the resample data set would be better for the dataset.
 
-- Which one seems to perform best? How do you know it performs best?
-- Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+The model that is working best highly depends on the dataset. However, in real-life datasets, the majority of datasets are unbalanced. Therefore, unbalanced resample models could be working for many datasets.
 
-If you do not recommend any of the models, please justify your reasoning.
+In the context of loan credit risk analysis, identifying risky loans is more important than identifying the healthy loans. When identifying risk loans, the most important question to be answered is how many actual risky loans have been identified correctly. In order to answer this question, the recall score of risk loans is the best indicator. Since, recall score is better in the model with BalancedResampled data set, resampled model could be considered to be the best model for this dataset.
